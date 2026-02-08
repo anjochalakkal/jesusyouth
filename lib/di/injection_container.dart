@@ -9,22 +9,22 @@ import 'package:jesusyouth/features/login/presentation/bloc/login_bloc.dart';
 final sl = GetIt.instance;
 
 Future<void> init() async {
-  // Bloc
-  sl.registerFactory(() => LoginBloc(sl()));
+  // ---------------- Core ----------------
+  sl.registerLazySingleton(
+    () => Dio(BaseOptions(baseUrl: "https://api.myapp.com")),
+  );
 
-  // Usecase
-  sl.registerLazySingleton(() => LoginUseCase(sl()));
-
-  // Repository
-  sl.registerLazySingleton<AuthRepository>(() => AuthRepositoryImpl(sl()));
-
-  // Datasource
+  // ---------------- DataSource ----------------
   sl.registerLazySingleton<AuthRemoteDataSource>(
     () => AuthRemoteDataSourceImpl(sl()),
   );
 
-  // Dio Client
-  sl.registerLazySingleton(
-    () => Dio(BaseOptions(baseUrl: "https://api.myapp.com")),
-  );
+  // ---------------- Repository ----------------
+  sl.registerLazySingleton<AuthRepository>(() => AuthRepositoryImpl(sl()));
+
+  // ---------------- UseCase ----------------
+  sl.registerLazySingleton(() => LoginUseCase(sl()));
+
+  // ---------------- Bloc (ALWAYS LAST) ----------------
+  sl.registerFactory(() => LoginBloc(sl()));
 }

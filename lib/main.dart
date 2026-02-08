@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:jesusyouth/di/injection_container.dart';
 import 'package:jesusyouth/routes/app_router.dart';
 
-void main() {
+void main() async {
+  await init();
   runApp(const MyApp());
 }
 
