@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:jesusyouth/features/dashboard/presentation/pages/dashboardpage.dart';
-import 'package:jesusyouth/features/login/presentation/pages/loginpage.dart';
+import 'package:jesusyouth/features/login/presentation/pages/login_page.dart';
 import 'package:jesusyouth/routes/router_paths.dart';
 
 class AppRouter {
