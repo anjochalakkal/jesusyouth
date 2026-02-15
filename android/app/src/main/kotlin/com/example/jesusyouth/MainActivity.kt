@@ -1,4 +1,4 @@
-package com.example.jesusyouth
+package com.tcr.jesusyouth
 
 import io.flutter.embedding.android.FlutterActivity
 
