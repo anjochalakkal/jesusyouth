@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "282587344772",
+    "project_id": "jesusyouth-b30e1",
+    "storage_bucket": "jesusyouth-b30e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282587344772:android:9eb2d4cabfeb4fd310f7d1",
+        "android_client_info": {
+          "package_name": "com.tcr.jesusyouth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282587344772-sd1piv2fr2i42f6dcpu7hnnc9a4drkib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyGjwYovgSwCS7WxbywkAPLf0cjNezCxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282587344772-sd1piv2fr2i42f6dcpu7hnnc9a4drkib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
